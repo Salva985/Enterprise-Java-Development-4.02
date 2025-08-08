@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "e5672b9c-05d6-43b4-9616-4ebd075ad742",
+		"name": "Hospital API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40333592"
+	},
+	"item": [
+		{
+			"name": "GET /employees/{id}",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /employees",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /employees/status/OFF",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/status/OFF",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"status",
+						"OFF"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /employees/status/ON",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/status/ON",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"status",
+						"ON"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /employees/status/ON_CALL",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/status/ON_CALL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"status",
+						"ON_CALL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /employees/department/cardiology",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/department/cardiology",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"department",
+						"cardiology"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /patients",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /patients/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/patients/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"patients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /patients/dob?start=1950-01-01&end=2000-12-31",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/patients/dob?start=1950-01-01&end=2000-12-31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"patients",
+						"dob"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1950-01-01"
+						},
+						{
+							"key": "end",
+							"value": "2000-12-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /patients/department/cardiology",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/patients/department/cardiology",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"patients",
+						"department",
+						"cardiology"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /patients/doctor-status/off",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/patients/doctor-status/off",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"patients",
+						"doctor-status",
+						"off"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
