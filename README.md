@@ -1,6 +1,6 @@
-# 🏥 Enterprise-Java-Development-4.02
+# 🏥 Enterprise-Java-Development-4.02 - HOSPITAL API
 
-A Spring Boot REST API for managing a multi-city hospital system — includes employees (doctors) and patients. Built as part of the Ironhack Enterprise Java module.
+A Spring Boot REST API for managing a hospital system — includes employees (doctors) and patients. 
 
 ---
 
@@ -33,3 +33,30 @@ A Spring Boot REST API for managing a multi-city hospital system — includes em
    ```bash
    git clone https://github.com/Salva985/Enterprise-Java-Development-4.02.git
    cd Enterprise-Java-Development-4.02
+
+---
+
+## 🧪 API Endpoints
+
+### Employees
+
+GET /employees - Get all doctors <br>
+GET /employees/{id} - Get doctor by ID <br>
+GET /employees/status/{status} - Get doctors by status (ON, OFF, ON_CALL) <br>
+GET /employees/department/{department} - Get doctors by department <br>
+
+### Patients
+
+GET /patients - Get all patients <br>
+GET /patients/{id} - Get patient by ID <br>
+GET /patients/dob?start=YYYY-MM-DD&end=YYYY-MM-DD - Get patients born within a date range <br>
+GET /patients/department/{department} - Get patients by admitting doctor’s department <br>
+GET /patients/doctor-status/off - Get patients whose doctor is OFF <br>
+
+## 📦 Postman Collection
+
+You can find the exported collection in the root of the project:
+```bash
+hospital-api-postman-collection.json
+
+
